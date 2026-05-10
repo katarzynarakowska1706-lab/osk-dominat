@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSK DRIVE - Nauka Jazdy</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ffcc00;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#ffcc00;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+    color:#999;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>OSK DRIVE</h1>
+        <p>Profesjonalna nauka jazdy kat. B</p>
+        <a href="#kontakt" class="btn">Zapisz się</a>
+    </div>
+</header>
+
+<section>
+    <h2>Dlaczego my?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Doświadczeni instruktorzy</h3>
+            <p>Spokojna atmosfera i skuteczne przygotowanie do egzaminu.</p>
+        </div>
+
+        <div class="card">
+            <h3>Nowoczesne auta</h3>
+            <p>Szkolenie na samochodach podobnych do egzaminacyjnych.</p>
+        </div>
+
+        <div class="card">
+            <h3>Elastyczne godziny</h3>
+            <p>Jazdy rano, po południu i wieczorem.</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="background:#181818;">
+    <h2>Oferta</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Kurs kat. B</h3>
+            <p>Pełny kurs teoretyczny i praktyczny.</p>
+        </div>
+
+        <div class="card">
+            <h3>Jazdy doszkalające</h3>
+            <p>Dodatkowe godziny przed egzaminem państwowym.</p>
+        </div>
+
+        <div class="card">
+            <h3>Egzamin wewnętrzny</h3>
+            <p>Sprawdzenie przygotowania przed WORD.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+
+    <div class="contact">
+        <p>📞 123 456 789</p>
+        <p>📧 kontakt@oskdrive.pl</p>
+        <p>📍 Lublin</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 OSK DRIVE - Wszystkie prawa zastrzeżone
+</footer>
+
+</body>
+</html>
