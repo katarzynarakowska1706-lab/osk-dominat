@@ -3,313 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OSK DOMINAT - Nauka Jazdy Kat. B</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>OSK DOMINAT Katarzyna Rakowska</title>
+
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
+font-family:Arial,sans-serif;
 }
+
 body{
-font-family:'Poppins',sans-serif;
-background:#0f0f0f;
+background:#0d0d0d;
 color:white;
-line-height:1.7;
+line-height:1.6;
 }
+
 header{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop');
-background-size:cover;
-background-position:center;
+background:
+linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+url('auto.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 padding:20px;
 }
+
 .hero h1{
-font-size:70px;
-color:#ffd000;
-margin-bottom:15px;
+font-size:55px;
+color:#ff4d6d;
 }
+
 .hero p{
 font-size:24px;
-max-width:900px;
-margin:auto;
-margin-bottom:30px;
+margin:20px 0;
 }
+
 .btn{
 display:inline-block;
-padding:15px 35px;
-background:#ffd000;
-color:black;
+padding:15px 30px;
+background:#ff4d6d;
+color:white;
 text-decoration:none;
-border-radius:12px;
-font-weight:600;
-transition:0.3s;
+border-radius:30px;
+font-weight:bold;
 }
-.btn:hover{
-transform:scale(1.05);
-background:white;
-}
+
 section{
-padding:90px 10%;
+padding:80px 10%;
 }
-.section-title{
+
+h2{
+font-size:36px;
+margin-bottom:30px;
+color:#ff4d6d;
 text-align:center;
-font-size:42px;
-margin-bottom:50px;
-color:#ffd000;
 }
-.about{
-max-width:1200px;
-margin:auto;
-font-size:18px;
+
+.logo{
+display:block;
+margin:0 auto 30px;
+max-width:320px;
 }
+
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
+
 .card{
 background:#1a1a1a;
-padding:30px;
+padding:25px;
 border-radius:20px;
-box-shadow:0 0 20px rgba(0,0,0,0.3);
-transition:0.3s;
 }
-.card:hover{
-transform:translateY(-8px);
-}
-.card h3{
-margin-bottom:15px;
-color:#ffd000;
-}
-.price{
-font-size:28px;
-font-weight:700;
-margin-top:15px;
-}
-.list li{
-margin-bottom:12px;
-}
-.contact-box{
-background:#1a1a1a;
-padding:40px;
-border-radius:20px;
-max-width:900px;
-margin:auto;
-}
-.contact-box p{
-margin-bottom:15px;
-font-size:18px;
-}
-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-margin-top:30px;
-}
-input, textarea{
-padding:15px;
-border:none;
-border-radius:10px;
-font-size:16px;
-}
-button{
-padding:15px;
-border:none;
-background:#ffd000;
-font-size:18px;
-font-weight:600;
-border-radius:10px;
-cursor:pointer;
-transition:0.3s;
-}
-button:hover{
-background:white;
-}
-.map{
-margin-top:40px;
-border-radius:20px;
-overflow:hidden;
-}
+
 footer{
-background:black;
+background:#111;
 text-align:center;
-padding:30px;
-color:#888;
+padding:40px;
 }
-@media(max-width:768px){
-.hero h1{
-font-size:48px;
+
+.contact{
+font-size:20px;
+text-align:center;
 }
-.hero p{
+
+.price{
 font-size:18px;
+margin:8px 0;
 }
-.section-title{
-font-size:34px;
+
+.fb{
+background:#1877f2;
 }
+
+.map{
+margin-top:30px;
+width:100%;
+height:400px;
+border:none;
+border-radius:20px;
 }
 </style>
 </head>
+
 <body>
+
 <header>
 <div class="hero">
-<div>
-<h1>OSK DOMINAT</h1>
-<p>
-Profesjonalna nauka jazdy kategorii B w Opolu Lubelskim, Poniatowej i okolicach.
-Szkolenie prowadzone przez instruktora z uprawnieniami egzaminatora.
-</p>
-<a href="#kontakt" class="btn">Zapisz się na kurs</a>
-</div>
+<h1>OSK DOMINAT Katarzyna Rakowska</h1>
+<p>Nauka jazdy bez stresu. Skutecznie. Profesjonalnie.</p>
+<a href="#kontakt" class="btn">Zapisz się</a>
 </div>
 </header>
+
 <section>
-<h2 class="section-title">O nas</h2>
-<div class="about">
-<p>
-Ośrodek Szkolenia Kierowców <strong>DOMINAT</strong> powstał od imion córek — Dominiki i Natalii.
-OSK działał już w latach 2008–2012, a po kilkuletniej przerwie wrócił na rynek w 2020 roku,
-zapraszając nowych kandydatów na kierowców kategorii B.
-</p>
-<br>
-<p>
-Posiadam również uprawnienia egzaminatora. Zdobycie tych kwalifikacji wymagało ogromnej wiedzy,
-praktyki oraz zdania bardzo trudnych egzaminów teoretycznych i praktycznych.
-Dzięki temu kursanci poznają nie tylko zasady jazdy, ale również realne wymagania egzaminacyjne,
-na które zwracają uwagę egzaminatorzy podczas egzaminu państwowego WORD.
-</p>
-<br>
-<p>
-Szkolimy kursantów z Opola Lubelskiego, Poniatowej oraz okolicznych miejscowości.
-</p>
+<img src="logo.png" class="logo">
+
+<h2>Obsługujemy</h2>
+<div class="cards">
+<div class="card">Opole Lubelskie</div>
+<div class="card">Poniatowa</div>
+<div class="card">Puławy</div>
+<div class="card">Lublin</div>
+<div class="card">Kraśnik</div>
 </div>
 </section>
-<section style="background:#141414;">
-<h2 class="section-title">Oferta</h2>
+
+<section>
+<h2>Cennik</h2>
 <div class="cards">
 <div class="card">
-<h3>Kurs kat. B — Manual</h3>
-<p>
-30 godzin teorii + 30 godzin praktyki.
-</p>
-<div class="price">3200 zł</div>
+<div class="price">Kurs podstawowy 30h – 3200 zł</div>
+<div class="price">40h +1100 zł</div>
+<div class="price">50h +2000 zł</div>
+<div class="price">Automat +500 zł</div>
 </div>
+
 <div class="card">
-<h3>Kurs kat. B — Automat</h3>
-<p>
-Szkolenie na automatycznej skrzyni biegów z możliwością podstawienia auta na egzamin.
-</p>
-<div class="price">3800 zł</div>
+<div class="price">Teoria e-learning</div>
+<div class="price">Stacjonarna +300 zł</div>
 </div>
+
 <div class="card">
-<h3>Kurs przyśpieszony</h3>
-<p>
-Możliwość ukończenia kursu nawet w 14 dni po zdanej teorii państwowej.
-</p>
-</div>
-<div class="card">
-<h3>Jazdy doszkalające</h3>
-<p>
-Dla osób po kursie w OSK DOMINAT:
-<br><strong>Manual:</strong> 110 zł
-<br><strong>Automat:</strong> 130 zł
-</p>
-<p style="margin-top:15px;">
-Dla pozostałych osób:
-<br><strong>Manual:</strong> 130 zł
-<br><strong>Automat:</strong> 150 zł
-</p>
-</div>
-<div class="card">
-<h3>WORD — przygotowanie do egzaminu</h3>
-<p>
-Jazdy przygotowujące do egzaminu państwowego oraz możliwość zdawania egzaminu pojazdem OSK.
-</p>
-</div>
-<div class="card">
-<h3>Samochody szkoleniowe</h3>
-<p>
-Hyundai i20 biały 2015
-<br>
-Hyundai Tucson czarny 2016
-</p>
+<div class="price">3 spotkania +200 zł</div>
+<div class="price">4 spotkania +300 zł</div>
+<div class="price">5 spotkań +400 zł</div>
+<div class="price">7 spotkań +500 zł</div>
 </div>
 </div>
 </section>
+
 <section>
-<h2 class="section-title">Prawo Jazdy na Raty 0%</h2>
+<h2>Informacje dodatkowe</h2>
 <div class="cards">
-<div class="card">
-<h3>Bez dodatkowych kosztów</h3>
-<ul class="list">
-<li>✔️ Raty 0%</li>
-<li>✔️ Oprocentowanie 0%</li>
-<li>✔️ Odsetki 0%</li>
-<li>✔️ Prowizja 0%</li>
-<li>✔️ Minimum formalności</li>
-</ul>
-</div>
-<div class="card">
-<h3>Przykład spłaty</h3>
-<ul class="list">
-<li>1 rata — 30%</li>
-<li>2 rata — 20%</li>
-<li>3 rata — 30%</li>
-<li>4 rata — 20%</li>
-</ul>
-</div>
-<div class="card">
-<h3>Dla osób po zdanej teorii</h3>
-<ul class="list">
-<li>1 rata przy zapisie — 50%</li>
-<li>2 rata przy 20 godzinie — 50%</li>
-</ul>
-</div>
+<div class="card">Jazdy: 8:00–18:00</div>
+<div class="card">Wieczorem 18:00–22:00 +300 zł</div>
+<div class="card">Weekendy +300 zł</div>
+<div class="card">do 10 km lub 15 min dojazdu: +400 zł</div>
 </div>
 </section>
-<section style="background:#141414;" id="kontakt">
-<h2 class="section-title">Kontakt i Zapisy</h2>
-<div class="contact-box">
-<p><strong>📞 Telefon:</strong> 513 879 045</p>
-<p><strong>📧 E-mail:</strong> katarzynarakowska1706@gmail.com</p>
-<p><strong>📍 Adres:</strong> ul. Kraszewskiego 4/39</p>
-<p><strong>🕘 Godziny otwarcia:</strong> 9:00 – 17:00</p>
-<p><strong>📍 Obszar działania:</strong> Opole Lubelskie, Poniatowa i okolice</p>
-<p>
-<strong>Facebook:</strong>
-<a href="https://www.facebook.com/share/14fH1XjNnwW/" target="_blank" style="color:#ffd000;">
-OSK DOMINAT
+
+<section>
+<h2>Opinie</h2>
+<div style="text-align:center;">
+<a class="btn fb" href="https://www.facebook.com/profile.php?id=100046503611949" target="_blank">
+Zobacz opinie na Facebooku
 </a>
-</p>
-<form>
-<input type="text" placeholder="Imię i nazwisko">
-<input type="tel" placeholder="Numer telefonu">
-<input type="email" placeholder="Adres e-mail">
-<textarea rows="5" placeholder="Wiadomość"></textarea>
-<button type="submit">Wyślij zgłoszenie</button>
-</form>
-<div class="map">
-<iframe
-src="https://www.google.com/maps?q=Kraszewskiego%204/39%20Opole%20Lubelskie&output=embed"
-width="100%"
-height="400"
-style="border:0;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
-</div>
 </div>
 </section>
+
+<section id="kontakt">
+<h2>Kontakt</h2>
+<div class="contact">
+<p>📞 513 879 045</p>
+<p>✉ kate1706@wp.pl</p>
+<p>📍 ul. Kraszewskiego 4/39</p>
+</div>
+
+<iframe class="map"
+src="https://maps.google.com/maps?q=ul.%20Kraszewskiego%204/39&t=&z=15&ie=UTF8&iwloc=&output=embed">
+</iframe>
+</section>
+
 <footer>
-© 2026 OSK DOMINAT — Wszystkie prawa zastrzeżone
+<p>© 2025 OSK DOMINAT Katarzyna Rakowska</p>
 </footer>
+
 </body>
 </html>
